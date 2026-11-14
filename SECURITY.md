@@ -8,7 +8,7 @@ Agenteca installe du texte que des modèles vont exécuter, parfois avec des hoo
 
 Utilisez le signalement privé de GitHub : dans le dépôt concerné, onglet **Security**, puis **Report a vulnerability**.
 
-> À faire par les mainteneurs avant toute publication des dépôts : activer le signalement privé de vulnérabilités sur chaque dépôt, et indiquer ici une adresse de contact de secours. Aucune adresse n'est encore définie.
+Si ce signalement privé n'est pas disponible sur le dépôt, écrivez à <agenteca@proton.me>, sans détail public de la faille dans l'objet du message.
 
 Indiquez le dépôt et la version, les étapes pour reproduire, et l'effet (ce qu'un attaquant obtient).
 

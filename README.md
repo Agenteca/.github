@@ -14,6 +14,5 @@ Fichiers communs à tous les dépôts de l'organisation. GitHub les applique par
 
 ## À compléter avant publication
 
-- Adresse de contact dans `SECURITY.md` et `CODE_OF_CONDUCT.md`.
 - Validation juridique de `CLA.md` et de la licence de `agenteca-ee`.
 - Activation du signalement privé de vulnérabilités sur chaque dépôt.
