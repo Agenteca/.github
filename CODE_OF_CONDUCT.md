@@ -19,6 +19,6 @@ Dans tous les espaces du projet (dépôts, tickets, demandes de fusion, discussi
 
 ## Signaler
 
-> À compléter avant publication : adresse de contact du projet (adresse dédiée en cours de création).
+Écrivez à <agenteca@proton.me>.
 
 Tout signalement sera examiné rapidement et équitablement, et l'identité de la personne qui signale sera protégée. Les suites possibles vont de la correction à l'exclusion définitive, selon l'échelle décrite dans le Contributor Covenant.
