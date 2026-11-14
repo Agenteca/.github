@@ -54,4 +54,4 @@ Le présent accord est régi par le droit français.
 
 ## 10. Contact
 
-<agenteca@proton.me>
+> À compléter avant publication : adresse de contact du projet.

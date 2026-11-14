@@ -14,5 +14,6 @@ Fichiers communs à tous les dépôts de l'organisation. GitHub les applique par
 
 ## À savoir
 
+- **Adresse de contact à renseigner** dans `SECURITY.md`, `CODE_OF_CONDUCT.md`, `CLA.md` et dans la licence de `agenteca-ee`, une fois l'adresse dédiée créée.
 - `CLA.md` et la licence de `agenteca-ee` ont été rédigés sans relecture par un juriste. Une relecture est recommandée avant la première offre commerciale.
 - Le signalement privé de vulnérabilités doit être activé sur chaque dépôt (Settings > Security).
