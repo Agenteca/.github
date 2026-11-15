@@ -1,49 +1,52 @@
 # Agenteca
 
-Un catalogue et un gestionnaire d'agents IA, « façon HACS » : installez et tenez à jour des agents, des skills, des commandes, des hooks et des serveurs MCP depuis des dépôts git, dans **Claude Code**, **Codex**, **GitHub Copilot** et **Cursor**.
+A catalog and manager of AI agents, in the spirit of HACS: install and keep up to date agents, skills, commands, hooks and MCP servers from git repositories, in **Claude Code**, **Codex**, **GitHub Copilot** and **Cursor**.
 
 ```bash
-ahub add propriétaire/dépôt
+ahub add owner/repo
 ```
 
-Agenteca n'invente pas de format : les paquets suivent **OpenAPM** (`apm.yml`, `apm.lock.yaml`), les skills le standard **Agent Skills**, les serveurs d'outils **MCP**. Ce que le projet apporte, c'est le catalogue, l'interface, les intégrations et la gestion des droits.
+Agenteca invents no format: packages follow **OpenAPM** (`apm.yml`, `apm.lock.yaml`), skills follow the **Agent Skills** standard, tool servers follow **MCP**. What the project brings is the catalog, the interface, the integrations and the management of rights.
 
-Un agent est du texte exécuté par un modèle : Agenteca le traite comme du code. Chaque paquet est scanné, et tout ce qui sera écrit vous est montré avant de l'être.
+An agent is text executed by a model: Agenteca treats it as code. Every package is scanned, and everything that will be written is shown to you before it is.
 
-## Dépôts
+The command line, the web site and the editor extensions speak English, French, Spanish, Chinese and Hindi.
 
-| Dépôt | Rôle | Licence |
+## Repositories
+
+| Repository | Purpose | License |
 |---|---|---|
-| [agenteca-core](https://github.com/agenteca/agenteca-core) | Bibliothèque : manifeste, résolution, lockfile, adaptateurs, scan | Apache-2.0 |
-| [agenteca-cli](https://github.com/agenteca/agenteca-cli) | La commande `ahub` et son contrat JSON | Apache-2.0 |
-| [agenteca-server](https://github.com/agenteca/agenteca-server) | API REST et index du catalogue | AGPL-3.0 |
-| [agenteca-web](https://github.com/agenteca/agenteca-web) | Site du catalogue | AGPL-3.0 |
-| [agenteca-mcp](https://github.com/agenteca/agenteca-mcp) | Serveur MCP | Apache-2.0 |
-| [agenteca-claude-code](https://github.com/agenteca/agenteca-claude-code) | Plugin Claude Code | Apache-2.0 |
-| [agenteca-codex](https://github.com/agenteca/agenteca-codex) | Plugin Codex | Apache-2.0 |
-| [agenteca-copilot](https://github.com/agenteca/agenteca-copilot) | Plugin GitHub Copilot CLI | Apache-2.0 |
-| [agenteca-vscode](https://github.com/agenteca/agenteca-vscode) | Extension VS Code (Cursor et dérivés via Open VSX) | Apache-2.0 |
-| [agenteca-jetbrains](https://github.com/agenteca/agenteca-jetbrains) | Plugin JetBrains | Apache-2.0 |
-| [agenteca-registry](https://github.com/agenteca/agenteca-registry) | Catalogue de départ et paquet d'exemple | Apache-2.0 |
-| agenteca-ee | Fonctions premium (squelette) | Propriétaire |
+| [agenteca-core](https://github.com/agenteca/agenteca-core) | Library: manifest, resolution, lockfile, adapters, scan | Apache-2.0 |
+| [agenteca-cli](https://github.com/agenteca/agenteca-cli) | The `ahub` command and its JSON contract | Apache-2.0 |
+| [agenteca-server](https://github.com/agenteca/agenteca-server) | REST API and catalog index | AGPL-3.0 |
+| [agenteca-web](https://github.com/agenteca/agenteca-web) | Catalog web site | AGPL-3.0 |
+| [agenteca-mcp](https://github.com/agenteca/agenteca-mcp) | MCP server | Apache-2.0 |
+| [agenteca-claude-code](https://github.com/agenteca/agenteca-claude-code) | Claude Code plugin | Apache-2.0 |
+| [agenteca-codex](https://github.com/agenteca/agenteca-codex) | Codex plugin | Apache-2.0 |
+| [agenteca-copilot](https://github.com/agenteca/agenteca-copilot) | GitHub Copilot CLI plugin | Apache-2.0 |
+| [agenteca-vscode](https://github.com/agenteca/agenteca-vscode) | VS Code extension (Cursor and derivatives through Open VSX) | Apache-2.0 |
+| [agenteca-jetbrains](https://github.com/agenteca/agenteca-jetbrains) | JetBrains plugin | Apache-2.0 |
+| [agenteca-registry](https://github.com/agenteca/agenteca-registry) | Starter catalog and example package | Apache-2.0 |
+| [agenteca-agents](https://github.com/agenteca/agenteca-agents) | First agents of the catalog: a kit for building multi-repository open-source projects | Apache-2.0 |
+| agenteca-ee | Premium features (skeleton) | Proprietary |
 
-## Comment tout s'articule
+## How it fits together
 
-Toutes les intégrations sont des coques fines au-dessus de la CLI : elles appellent `ahub --json` et n'ont aucune logique d'installation propre. Le comportement est donc le même partout.
+Every integration is a thin shell over the CLI: it calls `ahub --json` and has no installation logic of its own. Behaviour is therefore the same everywhere.
 
 ```
-extensions IDE ─┐
-plugins d'agents ─→ agenteca-mcp ─┐
-                                  ├─→ ahub (agenteca-cli) ─→ agenteca-core
-site web ─→ agenteca-server ──────┘
+IDE extensions ──┐
+agent plugins ──→ agenteca-mcp ──┐
+                                 ├─→ ahub (agenteca-cli) ─→ agenteca-core
+web site ─→ agenteca-server ─────┘
 ```
 
-Deux contrats versionnés relient les dépôts : le schéma JSON de la sortie de `ahub`, et la spécification OpenAPI du serveur.
+Two versioned contracts link the repositories: the JSON schema of the output of `ahub`, and the OpenAPI specification of the server.
 
-## Modèle open core
+## Open-core model
 
-Le cœur est libre. La gestion fine des droits (SSO, SCIM, rôles personnalisés, droits par équipe, audit, validation avant publication) est une couche premium séparée, que le serveur charge si elle est installée et dont il se passe sinon.
+The core is free. Fine-grained rights management (SSO, SCIM, custom roles, per-team rights, audit, validation before publication) is a separate premium layer, which the server loads if it is installed and does without otherwise.
 
-## Contribuer
+## Contributing
 
-Voir [CONTRIBUTING.md](https://github.com/agenteca/.github/blob/main/CONTRIBUTING.md). Pour une faille de sécurité, voir [SECURITY.md](https://github.com/agenteca/.github/blob/main/SECURITY.md).
+See [CONTRIBUTING.md](https://github.com/agenteca/.github/blob/main/CONTRIBUTING.md). For a security vulnerability, see [SECURITY.md](https://github.com/agenteca/.github/blob/main/SECURITY.md).

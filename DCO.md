@@ -1,8 +1,8 @@
 # Developer Certificate of Origin
 
-Les dépôts sous licence Apache-2.0 demandent que chaque commit soit signé (`git commit -s`), ce qui ajoute une ligne `Signed-off-by: Prénom Nom <adresse>`. Par cette ligne, vous certifiez ce qui suit.
+The repositories under the Apache-2.0 license ask for each commit to be signed off (`git commit -s`), which adds a line `Signed-off-by: First Last <address>`. With this line, you certify what follows.
 
-Texte officiel (version 1.1), reproduit sans modification depuis <https://developercertificate.org/> :
+Official text (version 1.1), reproduced without modification from <https://developercertificate.org/>:
 
 ```
 Developer Certificate of Origin

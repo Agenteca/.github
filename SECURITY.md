@@ -1,30 +1,30 @@
-# Politique de sécurité
+# Security policy
 
-Agenteca installe du texte que des modèles vont exécuter, parfois avec des hooks et des serveurs MCP qui lancent des programmes. Les failles y sont prises au sérieux.
+Agenteca installs text that models will execute, sometimes with hooks and MCP servers that start programs. Vulnerabilities are taken seriously.
 
-## Signaler une faille
+## Reporting a vulnerability
 
-**Ne publiez pas de faille dans un ticket public.**
+**Do not disclose a vulnerability in a public issue.**
 
-Utilisez le signalement privé de GitHub : dans le dépôt concerné, onglet **Security**, puis **Report a vulnerability**.
+Use GitHub's private reporting: in the repository concerned, **Security** tab, then **Report a vulnerability**.
 
-Si ce signalement privé n'est pas disponible sur le dépôt, écrivez à <agenteca@proton.me>, sans détail public de la faille dans l'objet du message.
+If private reporting is not available on the repository, write to <agenteca@proton.me>, with no public detail of the vulnerability in the subject line.
 
-Indiquez le dépôt et la version, les étapes pour reproduire, et l'effet (ce qu'un attaquant obtient).
+Give the repository and the version, the steps to reproduce, and the impact (what an attacker gains). Reports in English or French are welcome.
 
-## Ce qui nous intéresse en priorité
+## What matters most
 
-- Un paquet qui fait écrire un fichier hors du projet, ou à travers un lien symbolique.
-- Un paquet dont du code s'exécute pendant l'installation.
-- Un contenu malveillant que le scan laisse passer alors qu'une règle devrait l'arrêter (texte invisible, commande téléchargée puis exécutée).
-- Un moyen, pour un modèle pilotant le serveur MCP ou un plugin, d'installer sans que le plan soit montré, ou de contourner un scan bloquant.
-- Un fichier modifié à la main écrasé ou supprimé sans accord.
-- Sur le serveur : lecture d'un catalogue privé sans y être membre, élévation de rôle, fuite de jeton.
+- A package that makes a file be written outside the project, or through a symbolic link.
+- A package whose code runs during installation.
+- Malicious content that the scan lets through when a rule should stop it (invisible text, a downloaded command then executed).
+- A way, for a model driving the MCP server or a plugin, to install without the plan being shown, or to override a blocking scan.
+- A file edited by hand overwritten or deleted without agreement.
+- On the server: reading a private catalog without being a member, role escalation, token leak.
 
-## Ce que le scan ne garantit pas
+## What the scan does not guarantee
 
-Le scan repère des pièges connus. Il ne prouve pas qu'un paquet est sûr : un texte parfaitement lisible peut demander à un agent une action nuisible. Un tel paquet n'est pas une faille d'Agenteca ; signalez-le au mainteneur du catalogue qui le liste.
+The scan spots known traps. It does not prove that a package is safe: a perfectly readable text can ask an agent to do something harmful. Such a package is not a vulnerability of Agenteca; report it to the maintainer of the catalog that lists it.
 
-## Versions suivies
+## Supported versions
 
-Le projet est en 0.x : seule la dernière version publiée de chaque dépôt reçoit des correctifs.
+The project is in 0.x: only the latest published version of each repository receives fixes.

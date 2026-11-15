@@ -1,24 +1,24 @@
-# Code de conduite
+# Code of conduct
 
-Ce projet adopte le **Contributor Covenant, version 2.1**. Son texte fait foi :
+This project adopts the **Contributor Covenant, version 2.1**. Its text is authoritative:
 
-- en français : <https://www.contributor-covenant.org/fr/version/2/1/code_of_conduct/>
-- en anglais : <https://www.contributor-covenant.org/version/2/1/code_of_conduct/>
+- in English: <https://www.contributor-covenant.org/version/2/1/code_of_conduct/>
+- translations, including French, Spanish, Chinese and Hindi: <https://www.contributor-covenant.org/translations/>
 
-## En bref
+## In short
 
-Nous voulons une communauté ouverte et accueillante, où chacun peut participer sans subir de harcèlement, quels que soient son âge, sa corpulence, son handicap, son origine, son identité ou son expression de genre, son niveau d'expérience, sa nationalité, son apparence, sa religion ou son orientation sexuelle.
+We want an open and welcoming community, where everyone can take part without harassment, regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, personal appearance, religion or sexual orientation.
 
-Attendu de tous : de la bienveillance, le respect des points de vue différents, des critiques constructives et acceptées de bonne grâce, la reconnaissance de ses erreurs.
+Expected from everyone: kindness, respect for differing viewpoints, constructive criticism given and accepted gracefully, acknowledging one's mistakes.
 
-Non toléré : propos ou images à caractère sexuel, moqueries, attaques personnelles ou politiques, harcèlement public ou privé, publication d'informations privées d'autrui sans son accord.
+Not tolerated: sexualised language or imagery, trolling, personal or political attacks, public or private harassment, publishing others' private information without their consent.
 
-## Où il s'applique
+## Where it applies
 
-Dans tous les espaces du projet (dépôts, tickets, demandes de fusion, discussions), et quand une personne représente le projet en public.
+In every space of the project (repositories, issues, pull requests, discussions), and when someone represents the project in public.
 
-## Signaler
+## Reporting
 
-Écrivez à <agenteca@proton.me>.
+Write to <agenteca@proton.me>.
 
-Tout signalement sera examiné rapidement et équitablement, et l'identité de la personne qui signale sera protégée. Les suites possibles vont de la correction à l'exclusion définitive, selon l'échelle décrite dans le Contributor Covenant.
+Every report will be reviewed promptly and fairly, and the identity of the reporter will be protected. Possible consequences range from correction to permanent ban, following the ladder described in the Contributor Covenant.

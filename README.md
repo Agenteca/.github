@@ -1,18 +1,18 @@
-# .github — gouvernance de l'organisation Agenteca
+# .github — governance of the Agenteca organisation
 
-Fichiers communs à tous les dépôts de l'organisation. GitHub les applique par défaut aux dépôts qui n'ont pas les leurs.
+Files shared by every repository of the organisation. GitHub applies them by default to the repositories that do not have their own.
 
-| Fichier | Rôle |
+| File | Purpose |
 |---|---|
-| [profile/README.md](profile/README.md) | Page d'accueil de l'organisation |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Comment contribuer |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Code de conduite |
-| [SECURITY.md](SECURITY.md) | Signaler une faille |
-| [DCO.md](DCO.md) | Certificat d'origine, pour les dépôts Apache-2.0 |
-| [CLA.md](CLA.md) | Accord de contribution, pour `agenteca-server`, `agenteca-web` et `agenteca-ee` |
-| `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md` | Modèles par défaut |
+| [profile/README.md](profile/README.md) | Home page of the organisation |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Code of conduct |
+| [SECURITY.md](SECURITY.md) | Reporting a vulnerability |
+| [DCO.md](DCO.md) | Developer Certificate of Origin, for the Apache-2.0 repositories |
+| [CLA.md](CLA.md) (French, binding) and [CLA.en.md](CLA.en.md) (English translation) | Contributor license agreement, for `agenteca-server`, `agenteca-web` and `agenteca-ee` |
+| `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md` | Default templates |
 
-## À savoir
+## Good to know
 
-- `CLA.md` et la licence de `agenteca-ee` ont été rédigés sans relecture par un juriste. Une relecture est recommandée avant la première offre commerciale.
-- Le signalement privé de vulnérabilités doit être activé sur chaque dépôt (Settings > Security).
+- `CLA.md` and the license of `agenteca-ee` were written without review by a lawyer. A review is recommended before the first commercial offer.
+- Private vulnerability reporting must be enabled on each repository (Settings > Security).

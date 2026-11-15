@@ -2,6 +2,8 @@
 
 Version 1.0 — 14 novembre 2026
 
+> English translation, for information only: [CLA.en.md](CLA.en.md). Seule la présente version française fait foi.
+
 > Ce texte a été rédigé sans relecture par un juriste. Il reprend la structure des accords de contribution les plus répandus : le contributeur garde ses droits et accorde une licence étendue au projet.
 
 S'applique aux dépôts **`agenteca-server`**, **`agenteca-web`** et **`agenteca-ee`**. Les autres dépôts demandent seulement le [DCO](DCO.md).
